@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/textviewviewmoreplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:background="#EFECEC"
+        android:paddingLeft="5dp"
+        android:drawableLeft="@drawable/baseline_dehaze_24"
+        android:drawablePadding="10dp"
+        android:textSize="19sp"
+        android:text="xem thêm"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvviewplaylist"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textviewviewmoreplaylist"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/black">
+
+    <ImageView
+        android:id="@+id/imgtimkiembaihat"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="3dp"
+        android:scaleType="fitXY"
+        android:src="@color/xam" />
+
+    <TextView
+        android:id="@+id/txttimkiemtenbaihat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/imgtimkiembaihat"
+        android:maxWidth="250dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="5dp"
+        android:text="Ten bai hat"
+        android:textSize="20dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/txttencasitimkiem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txttimkiemtenbaihat"
+        android:text="Ten ca si"
+        android:layout_toRightOf="@id/imgtimkiembaihat"
+        android:textColor="@color/xam"
+        android:layout_marginLeft="5dp"
+        />
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btnliketrongtimkiem"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/baseline_timrong_border_24"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:background="@android:color/transparent"
+        android:tint="@color/white"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DA_APP_MUSIC</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <style name="ExpandedTitle" parent="@android:style/TextAppearance.Large">
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="WhiteText">
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+</resources>

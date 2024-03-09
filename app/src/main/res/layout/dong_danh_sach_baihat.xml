@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/danhsachindex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:text="1"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/carviewdanhsachbaihatquangcao"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="3dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="3dp">
+
+            <ImageView
+                android:id="@+id/imageviewdanhsachquangcao"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@drawable/custom_background_banner"
+                android:scaleType="fitXY" />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:id="@+id/txttitletenbaihatquangcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên bài hát"
+            android:textSize="19sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/carviewdanhsachbaihatquangcao"
+            android:textColor="@color/white"/>
+        <TextView
+            android:id="@+id/txttencasicuabaihatquangcao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên ca sĩ"
+            android:layout_below="@id/txttitletenbaihatquangcao"
+            android:layout_toRightOf="@id/carviewdanhsachbaihatquangcao"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="16dp"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textColor="@color/white"/>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/iconhoriz"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/baseline_more_horiz_24"
+            android:tint="@color/white"
+            android:backgroundTint="@color/black"/>
+
+        <androidx.constraintlayout.utils.widget.ImageFilterButton
+            android:id="@+id/luotthich"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iconhoriz"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/baseline_timrong_border_24"
+            android:tint="@color/white"
+            android:backgroundTint="@color/black"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txttencasicuabaihatquangcao"
+            android:layout_toRightOf="@id/carviewdanhsachbaihatquangcao"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <androidx.constraintlayout.utils.widget.ImageFilterButton
+                android:id="@+id/iconPlay"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/baseline_play_arrow_24"
+                android:tint="@color/white"
+                android:backgroundTint="@color/black"/>
+
+            <TextView
+                android:id="@+id/txtSoLuongNghe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/txtThoiLuongBaiquangcao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4:19"
+                android:layout_marginLeft="5dp"
+                android:textColor="@color/white"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

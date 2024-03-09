@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    android:fillViewport="true"
+    android:background="@color/black">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <FrameLayout
+                android:id="@+id/containerFragmentBanner"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"/>
+            <FrameLayout
+                android:id="@+id/containerFragmentPlaylist"
+                android:layout_width="match_parent"
+                android:layout_height="280dp"/>
+
+            <FrameLayout
+                android:id="@+id/containerFragmentChude"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <FrameLayout
+                android:id="@+id/containerFragmentTheloai"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"/>
+
+            <FrameLayout
+                android:id="@+id/containerFragmentAlbum"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"/>
+
+            <FrameLayout
+                android:id="@+id/containerFragmentbaihat_host"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

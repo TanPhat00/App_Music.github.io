@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/black"
+    android:padding="15dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_centerInParent="true"
+        app:cardCornerRadius="15dp"
+        android:elevation="20dp">
+        <ImageView
+            android:id="@+id/imageviewbackgroundplaylist"
+            android:scaleType="fitXY"
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            android:src="@color/xam"
+            android:layout_gravity="center"/>
+        <View
+            android:layout_width="140dp"
+            android:layout_height="140dp"
+            />
+    </androidx.cardview.widget.CardView>
+    <TextView
+        android:id="@+id/textviewtenplaylist"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Nhac Rap"
+        android:textSize="18sp"
+        android:layout_marginTop="8dp"
+        android:maxWidth="100dp"
+        android:maxLines="1"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

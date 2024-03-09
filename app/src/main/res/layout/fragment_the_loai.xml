@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Frament.Fragment_TheLoai"
+    android:background="@color/black">
+
+    <RelativeLayout
+        android:id="@+id/rvviewtheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+        <TextView
+            android:id="@+id/txttitlethelai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="The Loai"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+        <TextView
+            android:id="@+id/txtxemthemtheloai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="xem them..."
+            android:layout_alignParentRight="true"
+            android:textColor="@color/xam"
+            android:textSize="17sp"/>
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvtheloai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rvviewtheloai"/>
+
+
+
+</RelativeLayout>
