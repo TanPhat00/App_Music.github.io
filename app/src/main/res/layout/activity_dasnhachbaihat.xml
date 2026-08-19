@@ -9,7 +9,7 @@
     tools:context=".Activity.DanhsachbaihatActivity"
     android:id="@+id/coordinatorlayoutdanhsachbaihat"
     android:background="@color/black">
-
+ 
     <com.google.android.material.appbar.AppBarLayout
         android:id="@+id/appbarlayout"
         android:layout_width="match_parent"
